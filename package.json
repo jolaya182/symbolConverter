@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
-    "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress"
+    "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress",
+    "build": "webpack --config config/webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "reactstrap": "^8.0.0",
-    "url-loader": "^1.1.2"
+    "url-loader": "^1.1.2",
+    "webpack-visualizer-plugin": "^0.1.11"
   }
 }
